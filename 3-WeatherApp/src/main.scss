@@ -1,0 +1,92 @@
+$mainBackground:#F1F1F1;
+$mainWhite:#fff;
+$boxColor:#819ca9;
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+span{
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: $mainBackground;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  max-width: 1100px;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input{
+  width: 500px;
+  height: 60px;
+  border: 2px solid #262626;
+  border-radius: 5px;;
+  background-color: $boxColor;
+}
+
+input, input::placeholder{
+  text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: $mainWhite;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+.city{
+  width: 100%;
+  display: flex;
+}
+
+.city_card{
+  font-family: "Roboto";
+  display:flex;
+  flex-direction: column;
+  min-width: 25%;
+  border: 2px solid #262626;
+  border-radius: 5px;
+  background-color: $boxColor;
+  padding: 20px;
+  margin:10px;
+  float: left;
+  clear: both;
+}
+
+.city__box--top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-img{
+    width: 100px;
+    height: 100px;
+  }
+  &-temp{
+    color: $mainWhite;
+    font-size: 2.2rem;
+  }
+}
+
+.city__box--place{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $mainWhite;
+  &-text{
+    font-size: 1.2rem;
+    font-weight: 300;
+  }  
+  &-country{
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+
